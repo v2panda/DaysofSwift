@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="My_SnapchatMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="8X3-Gz-qBs" id="FNy-4R-Hx3"/>
+                <outlet property="tempImageView" destination="LT9-4I-RcD" id="YWj-Zf-dtp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8X3-Gz-qBs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LT9-4I-RcD">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8X3-Gz-qBs" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="3ek-PI-fue"/>
+                <constraint firstItem="8X3-Gz-qBs" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="6HP-Ry-pFt"/>
+                <constraint firstItem="8X3-Gz-qBs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8vY-a5-hEL"/>
+                <constraint firstItem="LT9-4I-RcD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GDo-VF-dKn"/>
+                <constraint firstItem="LT9-4I-RcD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="GRj-zC-whN"/>
+                <constraint firstItem="8X3-Gz-qBs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V0n-bE-Mi7"/>
+                <constraint firstItem="LT9-4I-RcD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dnO-nJ-Chx"/>
+                <constraint firstItem="LT9-4I-RcD" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="qBr-XH-bro"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
