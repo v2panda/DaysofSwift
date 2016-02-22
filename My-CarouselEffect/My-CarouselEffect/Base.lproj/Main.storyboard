@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_CarouselEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="BaS-Jc-zpu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HB-qT-R6H">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2Dx-C1-uhL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o3N-jE-sqJ">
+                                            <rect key="frame" x="0.0" y="87" width="600" height="426"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="426" id="XYn-3v-lQJ"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="ncb-gJ-s5Q">
+                                                <size key="itemSize" width="300" height="400"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestCell" id="kyX-s9-qPu" customClass="InterestCollectionViewCell" customModule="My_CarouselEffect" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="13" width="300" height="400"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bodyline" translatesAutoresizingMaskIntoConstraints="NO" id="Hgt-SO-czL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                            </imageView>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpk-cI-ugg">
+                                                                <rect key="frame" x="0.0" y="340" width="300" height="60"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="k5z-TW-kWy">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I don't love you anymore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-n4-Onb">
+                                                                            <rect key="frame" x="13" y="12" width="274" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="LSl-Ak-tPB"/>
+                                                                                <constraint firstAttribute="width" constant="274" id="sV7-Tb-TdL"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="h2K-n4-Onb" firstAttribute="leading" secondItem="k5z-TW-kWy" secondAttribute="leading" constant="13" id="Bt8-Vo-4Ou"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="h2K-n4-Onb" secondAttribute="trailing" constant="13" id="KhT-IJ-OFa"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="h2K-n4-Onb" secondAttribute="bottom" constant="8" id="MZ6-rZ-Exm"/>
+                                                                        <constraint firstItem="h2K-n4-Onb" firstAttribute="top" secondItem="k5z-TW-kWy" secondAttribute="top" constant="12" id="ino-je-nNj"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="6DZ-nm-qaP"/>
+                                                                </constraints>
+                                                                <blurEffect style="light"/>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="Hgt-SO-czL" firstAttribute="leading" secondItem="kpk-cI-ugg" secondAttribute="trailing" id="5do-04-Bbv"/>
+                                                        <constraint firstItem="Hgt-SO-czL" firstAttribute="centerX" secondItem="kyX-s9-qPu" secondAttribute="centerX" id="JCn-Yq-DMB"/>
+                                                        <constraint firstItem="kpk-cI-ugg" firstAttribute="top" secondItem="Hgt-SO-czL" secondAttribute="bottom" id="KcD-EP-1LL"/>
+                                                        <constraint firstItem="kpk-cI-ugg" firstAttribute="centerX" secondItem="kyX-s9-qPu" secondAttribute="centerX" id="NrC-lb-dSH"/>
+                                                        <constraint firstItem="Hgt-SO-czL" firstAttribute="centerY" secondItem="kyX-s9-qPu" secondAttribute="centerY" id="S82-z9-QUT"/>
+                                                        <constraint firstItem="kpk-cI-ugg" firstAttribute="width" secondItem="kyX-s9-qPu" secondAttribute="width" id="ZoV-nj-zJY"/>
+                                                        <constraint firstItem="Hgt-SO-czL" firstAttribute="height" secondItem="kyX-s9-qPu" secondAttribute="height" id="aef-m2-9I4"/>
+                                                        <constraint firstItem="Hgt-SO-czL" firstAttribute="width" secondItem="kyX-s9-qPu" secondAttribute="width" id="eQ8-WG-9pk"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="kpk-cI-ugg" secondAttribute="bottom" constant="-8" id="kyH-Ih-UXq"/>
+                                                        <constraint firstItem="kpk-cI-ugg" firstAttribute="centerY" secondItem="Hgt-SO-czL" secondAttribute="centerY" id="uDQ-bE-wdk"/>
+                                                        <constraint firstItem="kpk-cI-ugg" firstAttribute="width" secondItem="Hgt-SO-czL" secondAttribute="width" id="yjT-Ec-1wH"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="5do-04-Bbv"/>
+                                                            <exclude reference="KcD-EP-1LL"/>
+                                                            <exclude reference="uDQ-bE-wdk"/>
+                                                            <exclude reference="yjT-Ec-1wH"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <outlet property="featuredImageView" destination="Hgt-SO-czL" id="qo8-jd-DaZ"/>
+                                                        <outlet property="interestTitleLabel" destination="h2K-n4-Onb" id="bdu-CW-a26"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="BYZ-38-t0r" id="T2h-H6-zzu"/>
+                                                <outlet property="delegate" destination="BYZ-38-t0r" id="WWb-7u-OZ7"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="o3N-jE-sqJ" firstAttribute="centerY" secondItem="2Dx-C1-uhL" secondAttribute="centerY" id="Yx1-T9-HUg"/>
+                                        <constraint firstItem="o3N-jE-sqJ" firstAttribute="width" secondItem="2Dx-C1-uhL" secondAttribute="width" id="r1u-YS-MeZ"/>
+                                        <constraint firstItem="o3N-jE-sqJ" firstAttribute="centerX" secondItem="2Dx-C1-uhL" secondAttribute="centerX" id="tiB-3c-P9J"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BaS-Jc-zpu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Q2-Yl-WUg"/>
+                            <constraint firstItem="8HB-qT-R6H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BWl-qd-vR3"/>
+                            <constraint firstItem="8HB-qT-R6H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EOv-5n-sVA"/>
+                            <constraint firstItem="BaS-Jc-zpu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="L6P-su-xIU"/>
+                            <constraint firstItem="BaS-Jc-zpu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="abK-Ar-6uC"/>
+                            <constraint firstItem="8HB-qT-R6H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="geh-pA-XbB"/>
+                            <constraint firstItem="BaS-Jc-zpu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mnt-lC-xwy"/>
+                            <constraint firstItem="8HB-qT-R6H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yzG-sm-ueq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ceCollection" destination="o3N-jE-sqJ" id="eXX-4U-f6C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="462"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue" width="375" height="667"/>
+        <image name="bodyline" width="596" height="595"/>
+    </resources>
+</document>
