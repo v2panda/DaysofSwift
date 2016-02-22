@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Where" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-3i-Qkb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-JK-LpS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jv9-rf-hWa">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXh-8u-A2u">
+                                            <rect key="frame" x="65" y="35" width="471" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc3-J1-ike">
+                                                    <rect key="frame" x="37" y="19" width="396" height="61"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="bc3-J1-ike" firstAttribute="centerY" secondItem="cXh-8u-A2u" secondAttribute="centerY" id="47G-pL-Bhk"/>
+                                                <constraint firstItem="bc3-J1-ike" firstAttribute="top" secondItem="cXh-8u-A2u" secondAttribute="top" constant="19" id="63b-Aj-7i3"/>
+                                                <constraint firstAttribute="height" constant="100" id="YS1-Io-cAP"/>
+                                                <constraint firstAttribute="trailing" secondItem="bc3-J1-ike" secondAttribute="trailing" constant="38" id="sSa-lq-rit"/>
+                                                <constraint firstItem="bc3-J1-ike" firstAttribute="centerX" secondItem="cXh-8u-A2u" secondAttribute="centerX" id="xbY-WI-HNX"/>
+                                                <constraint firstItem="bc3-J1-ike" firstAttribute="leading" secondItem="cXh-8u-A2u" secondAttribute="leading" constant="37" id="zbH-lQ-157"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rls-pO-qsb">
+                                            <rect key="frame" x="86" y="474" width="429" height="86"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="86" id="Ceo-ei-wD5"/>
+                                            </constraints>
+                                            <state key="normal" title="Find My Location"/>
+                                            <connections>
+                                                <action selector="findButtonDidTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGk-Hg-r5O"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Find my location" translatesAutoresizingMaskIntoConstraints="NO" id="Qwd-6P-d6Y">
+                                            <rect key="frame" x="148" y="477" width="305" height="81"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="305" id="5BL-P9-crd"/>
+                                                <constraint firstAttribute="height" constant="81" id="SjZ-F5-BVL"/>
+                                                <constraint firstAttribute="width" constant="305" id="dTh-ep-WpB"/>
+                                                <constraint firstAttribute="height" constant="81" id="jbH-ZG-Ccw"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="dTh-ep-WpB"/>
+                                                    <exclude reference="jbH-ZG-Ccw"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rls-pO-qsb" firstAttribute="leading" secondItem="jv9-rf-hWa" secondAttribute="leading" constant="86" id="4B6-Wo-UTO"/>
+                                        <constraint firstItem="Qwd-6P-d6Y" firstAttribute="centerY" secondItem="rls-pO-qsb" secondAttribute="centerY" id="BAH-C5-PWP"/>
+                                        <constraint firstItem="cXh-8u-A2u" firstAttribute="leading" secondItem="jv9-rf-hWa" secondAttribute="leading" constant="65" id="Eq6-sf-aY7"/>
+                                        <constraint firstAttribute="trailing" secondItem="cXh-8u-A2u" secondAttribute="trailing" constant="64" id="I7I-rO-cYB"/>
+                                        <constraint firstAttribute="bottom" secondItem="rls-pO-qsb" secondAttribute="bottom" constant="40" id="VEP-hE-cp2"/>
+                                        <constraint firstItem="cXh-8u-A2u" firstAttribute="centerX" secondItem="jv9-rf-hWa" secondAttribute="centerX" id="VOK-Rx-PXe"/>
+                                        <constraint firstItem="rls-pO-qsb" firstAttribute="centerX" secondItem="jv9-rf-hWa" secondAttribute="centerX" id="aTF-W5-w6L"/>
+                                        <constraint firstItem="Qwd-6P-d6Y" firstAttribute="centerX" secondItem="jv9-rf-hWa" secondAttribute="centerX" id="fX6-qm-gvB"/>
+                                        <constraint firstItem="cXh-8u-A2u" firstAttribute="top" secondItem="jv9-rf-hWa" secondAttribute="top" constant="35" id="iTH-eO-GZZ"/>
+                                        <constraint firstItem="Qwd-6P-d6Y" firstAttribute="centerX" secondItem="rls-pO-qsb" secondAttribute="centerX" id="pT8-08-QXQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="rls-pO-qsb" secondAttribute="trailing" constant="85" id="zMS-5M-CUK"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="fX6-qm-gvB"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7EP-JK-LpS" firstAttribute="centerX" secondItem="GqC-3i-Qkb" secondAttribute="centerX" id="08b-1W-3OZ"/>
+                            <constraint firstItem="7EP-JK-LpS" firstAttribute="centerY" secondItem="GqC-3i-Qkb" secondAttribute="centerY" id="DgP-kn-F76"/>
+                            <constraint firstItem="GqC-3i-Qkb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Jmc-Gp-cE1"/>
+                            <constraint firstItem="GqC-3i-Qkb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LZv-eF-OfP"/>
+                            <constraint firstItem="7EP-JK-LpS" firstAttribute="height" secondItem="GqC-3i-Qkb" secondAttribute="height" id="ehS-Hp-9fa"/>
+                            <constraint firstItem="7EP-JK-LpS" firstAttribute="width" secondItem="GqC-3i-Qkb" secondAttribute="width" id="mpz-3X-28B"/>
+                            <constraint firstItem="GqC-3i-Qkb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="wih-TO-7bV"/>
+                            <constraint firstItem="GqC-3i-Qkb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yqY-LO-2Hp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="bc3-J1-ike" id="PDM-oU-owc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Find my location" width="326" height="78"/>
+        <image name="bg" width="375" height="667"/>
+    </resources>
+</document>
