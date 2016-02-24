@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_ImageScrollerEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="hx9-EM-kob">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5y-G8-zbi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fIH-RA-eV9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c5y-G8-zbi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="BE2-VS-9uU"/>
+                            <constraint firstItem="c5y-G8-zbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JTi-YA-7y9"/>
+                            <constraint firstItem="hx9-EM-kob" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MiK-4K-G50"/>
+                            <constraint firstItem="hx9-EM-kob" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="QsG-co-NiX"/>
+                            <constraint firstItem="c5y-G8-zbi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ThA-ir-oc2"/>
+                            <constraint firstItem="hx9-EM-kob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cwr-hb-9Ul"/>
+                            <constraint firstItem="c5y-G8-zbi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="i7s-AV-Zhw"/>
+                            <constraint firstItem="hx9-EM-kob" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="q2T-s6-uvN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="steve" width="320" height="320"/>
+    </resources>
+</document>
