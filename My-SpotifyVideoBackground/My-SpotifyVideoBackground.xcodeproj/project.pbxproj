@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28EC99E21C7E950B00B675A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC99E11C7E950B00B675A7 /* AppDelegate.swift */; };
+		28EC99E41C7E950B00B675A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC99E31C7E950B00B675A7 /* ViewController.swift */; };
+		28EC99E71C7E950B00B675A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EC99E51C7E950B00B675A7 /* Main.storyboard */; };
+		28EC99E91C7E950B00B675A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EC99E81C7E950B00B675A7 /* Assets.xcassets */; };
+		28EC99EC1C7E950B00B675A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EC99EA1C7E950B00B675A7 /* LaunchScreen.storyboard */; };
+		28EC9A0B1C7ED03F00B675A7 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28EC9A0A1C7ECBE500B675A7 /* moments.mp4 */; };
+		28EC9A0F1C7ED25700B675A7 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC9A0D1C7ED25700B675A7 /* VideoCutter.swift */; };
+		28EC9A101C7ED25700B675A7 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC9A0E1C7ED25700B675A7 /* VideoSplashViewController.swift */; };
+		28EC9A121C7ED26E00B675A7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC9A111C7ED26E00B675A7 /* WelcomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28EC99DE1C7E950B00B675A7 /* My-SpotifyVideoBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-SpotifyVideoBackground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EC99E11C7E950B00B675A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28EC99E31C7E950B00B675A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28EC99E61C7E950B00B675A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28EC99E81C7E950B00B675A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28EC99EB1C7E950B00B675A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28EC99ED1C7E950B00B675A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28EC9A0A1C7ECBE500B675A7 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		28EC9A0D1C7ED25700B675A7 /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		28EC9A0E1C7ED25700B675A7 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+		28EC9A111C7ED26E00B675A7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28EC99DB1C7E950B00B675A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28EC99D51C7E950B00B675A7 = {
+			isa = PBXGroup;
+			children = (
+				28EC99E01C7E950B00B675A7 /* My-SpotifyVideoBackground */,
+				28EC99DF1C7E950B00B675A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28EC99DF1C7E950B00B675A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28EC99DE1C7E950B00B675A7 /* My-SpotifyVideoBackground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28EC99E01C7E950B00B675A7 /* My-SpotifyVideoBackground */ = {
+			isa = PBXGroup;
+			children = (
+				28EC9A0C1C7ED23500B675A7 /* VideoSplash */,
+				28EC99E11C7E950B00B675A7 /* AppDelegate.swift */,
+				28EC99E31C7E950B00B675A7 /* ViewController.swift */,
+				28EC9A111C7ED26E00B675A7 /* WelcomeViewController.swift */,
+				28EC99E51C7E950B00B675A7 /* Main.storyboard */,
+				28EC9A0A1C7ECBE500B675A7 /* moments.mp4 */,
+				28EC99E81C7E950B00B675A7 /* Assets.xcassets */,
+				28EC99EA1C7E950B00B675A7 /* LaunchScreen.storyboard */,
+				28EC99ED1C7E950B00B675A7 /* Info.plist */,
+			);
+			path = "My-SpotifyVideoBackground";
+			sourceTree = "<group>";
+		};
+		28EC9A0C1C7ED23500B675A7 /* VideoSplash */ = {
+			isa = PBXGroup;
+			children = (
+				28EC9A0D1C7ED25700B675A7 /* VideoCutter.swift */,
+				28EC9A0E1C7ED25700B675A7 /* VideoSplashViewController.swift */,
+			);
+			path = VideoSplash;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28EC99DD1C7E950B00B675A7 /* My-SpotifyVideoBackground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EC99F01C7E950B00B675A7 /* Build configuration list for PBXNativeTarget "My-SpotifyVideoBackground" */;
+			buildPhases = (
+				28EC99DA1C7E950B00B675A7 /* Sources */,
+				28EC99DB1C7E950B00B675A7 /* Frameworks */,
+				28EC99DC1C7E950B00B675A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My-SpotifyVideoBackground";
+			productName = "My-SpotifyVideoBackground";
+			productReference = 28EC99DE1C7E950B00B675A7 /* My-SpotifyVideoBackground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28EC99D61C7E950B00B675A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = v2panda;
+				TargetAttributes = {
+					28EC99DD1C7E950B00B675A7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 28EC99D91C7E950B00B675A7 /* Build configuration list for PBXProject "My-SpotifyVideoBackground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28EC99D51C7E950B00B675A7;
+			productRefGroup = 28EC99DF1C7E950B00B675A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28EC99DD1C7E950B00B675A7 /* My-SpotifyVideoBackground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28EC99DC1C7E950B00B675A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EC9A0B1C7ED03F00B675A7 /* moments.mp4 in Resources */,
+				28EC99EC1C7E950B00B675A7 /* LaunchScreen.storyboard in Resources */,
+				28EC99E91C7E950B00B675A7 /* Assets.xcassets in Resources */,
+				28EC99E71C7E950B00B675A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28EC99DA1C7E950B00B675A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EC9A0F1C7ED25700B675A7 /* VideoCutter.swift in Sources */,
+				28EC9A121C7ED26E00B675A7 /* WelcomeViewController.swift in Sources */,
+				28EC99E41C7E950B00B675A7 /* ViewController.swift in Sources */,
+				28EC99E21C7E950B00B675A7 /* AppDelegate.swift in Sources */,
+				28EC9A101C7ED25700B675A7 /* VideoSplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28EC99E51C7E950B00B675A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EC99E61C7E950B00B675A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28EC99EA1C7E950B00B675A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EC99EB1C7E950B00B675A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28EC99EE1C7E950B00B675A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28EC99EF1C7E950B00B675A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28EC99F11C7E950B00B675A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "My-SpotifyVideoBackground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PDA.My-SpotifyVideoBackground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28EC99F21C7E950B00B675A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "My-SpotifyVideoBackground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PDA.My-SpotifyVideoBackground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28EC99D91C7E950B00B675A7 /* Build configuration list for PBXProject "My-SpotifyVideoBackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EC99EE1C7E950B00B675A7 /* Debug */,
+				28EC99EF1C7E950B00B675A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EC99F01C7E950B00B675A7 /* Build configuration list for PBXNativeTarget "My-SpotifyVideoBackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EC99F11C7E950B00B675A7 /* Debug */,
+				28EC99F21C7E950B00B675A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28EC99D61C7E950B00B675A7 /* Project object */;
+}

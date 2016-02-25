@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_SpotifyVideoBackground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="K35-40-Qa4">
+                                <rect key="frame" x="190" y="69" width="220" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="cxo-06-hof"/>
+                                    <constraint firstAttribute="height" constant="80" id="fef-L8-5eK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-QB-xbc">
+                                <rect key="frame" x="90" y="526" width="420" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.0" green="0.71840131279999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TlE-jN-OFP" kind="presentation" id="brC-cK-FG7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjd-ft-uNK">
+                                <rect key="frame" x="90" y="457" width="420" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.71840131279999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0KW-z3-obW"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TlE-jN-OFP" kind="presentation" id="n1f-eP-Jve"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sjd-ft-uNK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4c8-rq-0ch"/>
+                            <constraint firstItem="sjd-ft-uNK" firstAttribute="width" secondItem="oeQ-QB-xbc" secondAttribute="width" id="JjV-j3-fXI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oeQ-QB-xbc" secondAttribute="bottom" constant="30" id="Sep-L4-cSb"/>
+                            <constraint firstItem="sjd-ft-uNK" firstAttribute="height" secondItem="oeQ-QB-xbc" secondAttribute="height" id="aWn-Dn-3vF"/>
+                            <constraint firstItem="sjd-ft-uNK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="dLx-P7-5qH"/>
+                            <constraint firstItem="K35-40-Qa4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hE1-DK-vBC"/>
+                            <constraint firstItem="K35-40-Qa4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="nEE-PP-xkU"/>
+                            <constraint firstItem="oeQ-QB-xbc" firstAttribute="top" secondItem="sjd-ft-uNK" secondAttribute="bottom" constant="25" id="owc-aN-XSj"/>
+                            <constraint firstItem="oeQ-QB-xbc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sjY-qn-j7S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="Fjo-GH-h9o">
+            <objects>
+                <viewController id="TlE-jN-OFP" customClass="WelcomeViewController" customModule="My_SpotifyVideoBackground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0O0-yI-vJR"/>
+                        <viewControllerLayoutGuide type="bottom" id="3iC-kz-Bd0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DLS-C4-IXy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambience-1" translatesAutoresizingMaskIntoConstraints="NO" id="Klu-Hw-iqX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Spotify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uh-DU-ydm">
+                                <rect key="frame" x="0.0" y="28" width="600" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eqm-VZ-Vf7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.71840131279999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qc2-uW-2sJ">
+                                <rect key="frame" x="120" y="28" width="360" height="55"/>
+                                <connections>
+                                    <action selector="welcomeButtonDidTouched:" destination="TlE-jN-OFP" eventType="touchUpInside" id="khq-tg-7ZW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qc2-uW-2sJ" firstAttribute="centerY" secondItem="8uh-DU-ydm" secondAttribute="centerY" id="3eT-iL-qcY"/>
+                            <constraint firstItem="8uh-DU-ydm" firstAttribute="centerX" secondItem="Klu-Hw-iqX" secondAttribute="centerX" id="CM5-7w-8Bw"/>
+                            <constraint firstItem="qc2-uW-2sJ" firstAttribute="centerX" secondItem="8uh-DU-ydm" secondAttribute="centerX" id="GGF-lW-LdJ"/>
+                            <constraint firstItem="8uh-DU-ydm" firstAttribute="width" secondItem="Klu-Hw-iqX" secondAttribute="width" id="PlC-aX-SIH"/>
+                            <constraint firstItem="Klu-Hw-iqX" firstAttribute="height" secondItem="DLS-C4-IXy" secondAttribute="height" id="PwF-iH-TVr"/>
+                            <constraint firstItem="qc2-uW-2sJ" firstAttribute="width" secondItem="8uh-DU-ydm" secondAttribute="width" multiplier="0.6" id="Q5E-Ty-GTu"/>
+                            <constraint firstItem="Klu-Hw-iqX" firstAttribute="centerX" secondItem="DLS-C4-IXy" secondAttribute="centerX" id="aUh-zI-Zk8"/>
+                            <constraint firstItem="qc2-uW-2sJ" firstAttribute="height" secondItem="8uh-DU-ydm" secondAttribute="height" id="if3-IG-OHW"/>
+                            <constraint firstItem="Klu-Hw-iqX" firstAttribute="width" secondItem="DLS-C4-IXy" secondAttribute="width" id="kXD-3Q-TM7"/>
+                            <constraint firstItem="Klu-Hw-iqX" firstAttribute="top" secondItem="8uh-DU-ydm" secondAttribute="bottom" constant="-83" id="pla-zM-k1r"/>
+                            <constraint firstItem="Klu-Hw-iqX" firstAttribute="centerY" secondItem="DLS-C4-IXy" secondAttribute="centerY" id="x2h-uP-TFd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJv-xY-HGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ambience-1" width="375" height="667"/>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="n1f-eP-Jve"/>
+    </inferredMetricsTieBreakers>
+</document>
