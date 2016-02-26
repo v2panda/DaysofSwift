@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_EmojiGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-7w-XIn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dR2-J4-SfI">
+                                <rect key="frame" x="0.0" y="120" width="600" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pT7-8R-5BN">
+                                <rect key="frame" x="40" y="381" width="520" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.89880865893737494" blue="0.15360615101359942" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="63u-Zb-RXx"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonDidTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMR-kI-5p7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zc-G2-eJz">
+                                <rect key="frame" x="0.0" y="475" width="600" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5oO-Vl-U0N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pT7-8R-5BN" firstAttribute="top" secondItem="dR2-J4-SfI" secondAttribute="bottom" constant="45" id="9CD-o6-OUS"/>
+                            <constraint firstItem="dR2-J4-SfI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="9EA-mQ-d0z"/>
+                            <constraint firstItem="pPm-7w-XIn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aU-Kw-3g6"/>
+                            <constraint firstItem="8zc-G2-eJz" firstAttribute="centerX" secondItem="pPm-7w-XIn" secondAttribute="centerX" id="9mh-MI-fjx"/>
+                            <constraint firstItem="pPm-7w-XIn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EeU-tA-oDH"/>
+                            <constraint firstItem="dR2-J4-SfI" firstAttribute="centerX" secondItem="pPm-7w-XIn" secondAttribute="centerX" id="Kgu-2U-sj8"/>
+                            <constraint firstItem="8zc-G2-eJz" firstAttribute="width" secondItem="pT7-8R-5BN" secondAttribute="width" multiplier="0.8" id="Xim-gu-2pm"/>
+                            <constraint firstItem="pPm-7w-XIn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="bcv-Vg-zxx"/>
+                            <constraint firstItem="pT7-8R-5BN" firstAttribute="centerX" secondItem="pPm-7w-XIn" secondAttribute="centerX" id="gty-1B-taM"/>
+                            <constraint firstItem="dR2-J4-SfI" firstAttribute="width" secondItem="pPm-7w-XIn" secondAttribute="width" id="rYX-da-bGO"/>
+                            <constraint firstItem="8zc-G2-eJz" firstAttribute="top" secondItem="pT7-8R-5BN" secondAttribute="bottom" constant="52" id="sOZ-AG-7zM"/>
+                            <constraint firstItem="pT7-8R-5BN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="t4J-wC-ylA"/>
+                            <constraint firstItem="8zc-G2-eJz" firstAttribute="width" secondItem="pPm-7w-XIn" secondAttribute="width" id="uWG-4R-CqI"/>
+                            <constraint firstItem="pT7-8R-5BN" firstAttribute="width" secondItem="pPm-7w-XIn" secondAttribute="width" multiplier="0.7" id="wch-x0-dNL"/>
+                            <constraint firstItem="pPm-7w-XIn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="wp2-ck-kVU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wch-x0-dNL"/>
+                                <exclude reference="Xim-gu-2pm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="dR2-J4-SfI" id="CqW-63-WTF"/>
+                        <outlet property="resultLabel" destination="8zc-G2-eJz" id="NJD-ud-hPn"/>
+                        <outlet property="startButton" destination="pT7-8R-5BN" id="rvR-em-ruw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>
