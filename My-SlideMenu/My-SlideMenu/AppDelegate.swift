@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  My-SpotifyVideoBackground
+//  My-SlideMenu
 //
-//  Created by Panda on 16/2/25.
+//  Created by Panda on 16/3/2.
 //  Copyright © 2016年 v2panda. All rights reserved.
 //
 
@@ -12,15 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var mask: CALayer?
-    var imageView: UIImageView?
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-
-        
-        
-        
+        // Override point for customization after application launch.
         return true
     }
 
