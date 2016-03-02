@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		28640A9A1C868AE800535CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28640A991C868AE800535CA4 /* AppDelegate.swift */; };
-		28640A9C1C868AE800535CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28640A9B1C868AE800535CA4 /* ViewController.swift */; };
 		28640A9F1C868AE800535CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28640A9D1C868AE800535CA4 /* Main.storyboard */; };
 		28640AA11C868AE800535CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28640AA01C868AE800535CA4 /* Assets.xcassets */; };
 		28640AA41C868AE800535CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28640AA21C868AE800535CA4 /* LaunchScreen.storyboard */; };
@@ -16,12 +15,12 @@
 		28640AAE1C86932A00535CA4 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28640AAD1C86932A00535CA4 /* NewsTableViewCell.swift */; };
 		28640AB01C86E0EE00535CA4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28640AAF1C86E0EE00535CA4 /* MenuTableViewCell.swift */; };
 		28640AB21C86E15500535CA4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28640AB11C86E15500535CA4 /* MenuTableViewController.swift */; };
+		7CDE76C21C872FBA0004902F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDE76C11C872FBA0004902F /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28640A961C868AE800535CA4 /* My-SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-SlideMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28640A991C868AE800535CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28640A9B1C868AE800535CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28640A9E1C868AE800535CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28640AA01C868AE800535CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28640AA31C868AE800535CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		28640AAD1C86932A00535CA4 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		28640AAF1C86E0EE00535CA4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		28640AB11C86E15500535CA4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		7CDE76C11C872FBA0004902F /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +62,42 @@
 		28640A981C868AE800535CA4 /* My-SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				7CDE76BE1C872F740004902F /* Controllers */,
+				7CDE76C01C872F980004902F /* Model */,
+				7CDE76BF1C872F810004902F /* Views */,
 				28640A991C868AE800535CA4 /* AppDelegate.swift */,
-				28640A9B1C868AE800535CA4 /* ViewController.swift */,
-				28640AAB1C8691CD00535CA4 /* NewsTableViewController.swift */,
-				28640AB11C86E15500535CA4 /* MenuTableViewController.swift */,
-				28640AAD1C86932A00535CA4 /* NewsTableViewCell.swift */,
-				28640AAF1C86E0EE00535CA4 /* MenuTableViewCell.swift */,
-				28640A9D1C868AE800535CA4 /* Main.storyboard */,
 				28640AA01C868AE800535CA4 /* Assets.xcassets */,
-				28640AA21C868AE800535CA4 /* LaunchScreen.storyboard */,
 				28640AA51C868AE800535CA4 /* Info.plist */,
+				28640AA21C868AE800535CA4 /* LaunchScreen.storyboard */,
+				28640A9D1C868AE800535CA4 /* Main.storyboard */,
 			);
 			path = "My-SlideMenu";
+			sourceTree = "<group>";
+		};
+		7CDE76BE1C872F740004902F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28640AB11C86E15500535CA4 /* MenuTableViewController.swift */,
+				28640AAB1C8691CD00535CA4 /* NewsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CDE76BF1C872F810004902F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28640AAF1C86E0EE00535CA4 /* MenuTableViewCell.swift */,
+				28640AAD1C86932A00535CA4 /* NewsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CDE76C01C872F980004902F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CDE76C11C872FBA0004902F /* TransitionManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28640A9C1C868AE800535CA4 /* ViewController.swift in Sources */,
+				7CDE76C21C872FBA0004902F /* TransitionManager.swift in Sources */,
 				28640A9A1C868AE800535CA4 /* AppDelegate.swift in Sources */,
 				28640AB21C86E15500535CA4 /* MenuTableViewController.swift in Sources */,
 				28640AAE1C86932A00535CA4 /* NewsTableViewCell.swift in Sources */,
@@ -165,6 +189,7 @@
 				28640A9E1C868AE800535CA4 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		28640AA21C868AE800535CA4 /* LaunchScreen.storyboard */ = {
@@ -173,6 +198,7 @@
 				28640AA31C868AE800535CA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +328,7 @@
 				28640AAA1C868AE800535CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
