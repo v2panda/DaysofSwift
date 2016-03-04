@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280732841C8921C1007BA17C /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280732831C8921C1007BA17C /* TweetViewController.swift */; };
 		28370DF21C87D44B001B1FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28370DF11C87D44B001B1FC4 /* AppDelegate.swift */; };
 		28370DF71C87D44B001B1FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28370DF51C87D44B001B1FC4 /* Main.storyboard */; };
 		28370DF91C87D44B001B1FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28370DF81C87D44B001B1FC4 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280732831C8921C1007BA17C /* TweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 		28370DEE1C87D44B001B1FC4 /* My-TumblrMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-TumblrMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28370DF11C87D44B001B1FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28370DF61C87D44B001B1FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				28370E031C87D85B001B1FC4 /* MainViewController.swift */,
 				28370E0C1C87E657001B1FC4 /* MenuViewController.swift */,
+				280732831C8921C1007BA17C /* TweetViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				28370E0F1C87EA57001B1FC4 /* MenuTransitionManager.swift in Sources */,
 				28370E0D1C87E657001B1FC4 /* MenuViewController.swift in Sources */,
 				28370E061C87D86C001B1FC4 /* MainTableViewCell.swift in Sources */,
+				280732841C8921C1007BA17C /* TweetViewController.swift in Sources */,
 				28370E0B1C87D9BB001B1FC4 /* UserInfoModel.swift in Sources */,
 				28370E041C87D85B001B1FC4 /* MainViewController.swift in Sources */,
 			);
@@ -326,6 +330,7 @@
 				28370E021C87D44B001B1FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
