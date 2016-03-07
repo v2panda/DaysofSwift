@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -139,6 +139,7 @@
                 <constraint firstItem="OgF-Zg-gql" firstAttribute="baseline" secondItem="bpi-Jo-1fJ" secondAttribute="baseline" id="SsB-W5-TNh"/>
                 <constraint firstItem="Qwu-Xx-vcS" firstAttribute="firstBaseline" secondItem="bpi-Jo-1fJ" secondAttribute="firstBaseline" id="WxN-ZL-8Dr"/>
                 <constraint firstItem="gup-oW-iG1" firstAttribute="firstBaseline" secondItem="OtZ-at-Vwd" secondAttribute="firstBaseline" id="cg3-07-bYl"/>
+                <constraint firstItem="YA7-Y5-8R8" firstAttribute="width" secondItem="Afo-ww-qnc" secondAttribute="width" id="cq2-v2-7eW"/>
                 <constraint firstItem="yva-gO-mQT" firstAttribute="leading" secondItem="NTw-n2-2oG" secondAttribute="trailing" constant="8" symbolic="YES" id="dAv-Wa-uI7"/>
                 <constraint firstItem="NTw-n2-2oG" firstAttribute="firstBaseline" secondItem="8SG-ff-jkm" secondAttribute="firstBaseline" id="dmg-o0-rvQ"/>
                 <constraint firstItem="5AV-xi-Pfe" firstAttribute="firstBaseline" secondItem="8SG-ff-jkm" secondAttribute="firstBaseline" id="eZh-SE-oS3"/>
@@ -153,7 +154,6 @@
                 <constraint firstItem="Qwu-Xx-vcS" firstAttribute="firstBaseline" secondItem="gup-oW-iG1" secondAttribute="firstBaseline" id="mnn-cg-tPx"/>
                 <constraint firstItem="8SG-ff-jkm" firstAttribute="baseline" secondItem="5AV-xi-Pfe" secondAttribute="baseline" id="oHg-vj-BTw"/>
                 <constraint firstItem="5AV-xi-Pfe" firstAttribute="leading" secondItem="7hO-Jk-ZNm" secondAttribute="leading" constant="23" id="ujW-59-hMM"/>
-                <constraint firstAttribute="trailing" secondItem="YA7-Y5-8R8" secondAttribute="trailing" constant="24" id="vSb-c3-kkf"/>
                 <constraint firstItem="bpi-Jo-1fJ" firstAttribute="leading" secondItem="Qwu-Xx-vcS" secondAttribute="trailing" constant="8" symbolic="YES" id="vzd-BT-AkL"/>
                 <constraint firstItem="NTw-n2-2oG" firstAttribute="leading" secondItem="8SG-ff-jkm" secondAttribute="trailing" constant="8" symbolic="YES" id="xHz-9j-ktz"/>
                 <constraint firstItem="Afo-ww-qnc" firstAttribute="leading" secondItem="uSh-i0-syL" secondAttribute="trailing" constant="8" symbolic="YES" id="zh5-BT-cLj"/>
