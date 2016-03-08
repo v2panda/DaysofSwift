@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nmg-UM-iQA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Cell-->
+        <scene sceneID="gSw-ca-N7f">
+            <objects>
+                <tableViewController id="eJV-VF-JDV" customClass="SwipeTableViewController" customModule="My_SwipeCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="mxm-u5-5dd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwipeCells" rowHeight="80" id="ceG-ol-Csv" customClass="SwipeTableViewCell" customModule="My_SwipeCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ceG-ol-Csv" id="yfM-lc-8tH">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DDl-ZF-oy9">
+                                            <rect key="frame" x="8" y="0.0" width="150" height="79"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="SiF-uo-GVz"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ar-oc-Dsm">
+                                            <rect key="frame" x="168" y="20" width="374" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="H5U-FM-TTi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3Ar-oc-Dsm" secondAttribute="trailing" constant="50" id="1eL-dW-LTU"/>
+                                        <constraint firstItem="DDl-ZF-oy9" firstAttribute="leading" secondItem="yfM-lc-8tH" secondAttribute="leadingMargin" id="2WH-9M-CgP"/>
+                                        <constraint firstItem="DDl-ZF-oy9" firstAttribute="height" secondItem="yfM-lc-8tH" secondAttribute="height" id="8kx-ZD-Iod"/>
+                                        <constraint firstItem="3Ar-oc-Dsm" firstAttribute="centerY" secondItem="yfM-lc-8tH" secondAttribute="centerY" id="8yl-HK-Z1v"/>
+                                        <constraint firstItem="3Ar-oc-Dsm" firstAttribute="leading" secondItem="DDl-ZF-oy9" secondAttribute="trailing" constant="10" id="ltj-OC-rcD"/>
+                                        <constraint firstItem="DDl-ZF-oy9" firstAttribute="centerY" secondItem="yfM-lc-8tH" secondAttribute="centerY" id="roo-uA-E5W"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="swipeImageView" destination="DDl-ZF-oy9" id="Fj9-Gp-KTz"/>
+                                    <outlet property="swipeLabel" destination="3Ar-oc-Dsm" id="gTo-Wu-yv2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eJV-VF-JDV" id="XO1-yE-e7B"/>
+                            <outlet property="delegate" destination="eJV-VF-JDV" id="Hcx-Uu-1JN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swipe Cell" id="Dsw-ij-CMb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0I5-Ay-cH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073" y="402"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0ja-O1-J0p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nmg-UM-iQA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zL5-1u-e7X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eJV-VF-JDV" kind="relationship" relationship="rootViewController" id="6qS-1M-JB4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oon-Lv-faS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="402"/>
+        </scene>
+    </scenes>
+</document>
