@@ -66,7 +66,7 @@ class FriendReadViewController: UIViewController ,UITableViewDataSource{
     //MARK: - UITableViewDataSource
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 10
+        return 30
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
