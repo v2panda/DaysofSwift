@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OkX-i9-Dvm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_GWLAnimationTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="nvd-Eq-6Ay">
+                                <rect key="frame" x="200" y="236" width="200" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hxX-c6-Nxp"/>
+                                    <constraint firstAttribute="height" constant="128" id="pga-SH-Bb1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9n-Gh-Dp3">
+                                <rect key="frame" x="540" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eJE-JZ-1am"/>
+                                    <constraint firstAttribute="width" constant="40" id="l3g-AJ-LTr"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="68P-7L-2J9" kind="show" id="iUV-I2-Nh9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.81176470590000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nvd-Eq-6Ay" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0hB-ih-bQj"/>
+                            <constraint firstItem="k9n-Gh-Dp3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UDf-5h-TvG"/>
+                            <constraint firstItem="k9n-Gh-Dp3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fYc-BZ-lFd"/>
+                            <constraint firstItem="nvd-Eq-6Ay" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcA-vg-4VK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hxv-pS-2Ul"/>
+                    <connections>
+                        <outlet property="pushBtn" destination="k9n-Gh-Dp3" id="9Ia-4Q-f0S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6W1-6Q-mME">
+            <objects>
+                <viewController id="68P-7L-2J9" customClass="ViewController" customModule="My_GWLAnimationTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FFg-z7-ze8"/>
+                        <viewControllerLayoutGuide type="bottom" id="JqG-UP-BAJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8n3-Iz-BLk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rabbit" translatesAutoresizingMaskIntoConstraints="NO" id="jeA-jf-Dzg">
+                                <rect key="frame" x="200" y="236" width="200" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1Kt-Zr-oYg"/>
+                                    <constraint firstAttribute="height" constant="128" id="IDZ-f6-mTN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W0-QB-Not">
+                                <rect key="frame" x="540" y="28" width="40" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UM3-yk-va5"/>
+                                    <constraint firstAttribute="width" constant="40" id="lz4-yb-lrK"/>
+                                </constraints>
+                                <state key="normal" title="Pop"/>
+                                <connections>
+                                    <segue destination="wZp-S9-ilO" kind="unwind" unwindAction="unwindForSegue:" id="tED-01-xvo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jeA-jf-Dzg" firstAttribute="centerX" secondItem="8n3-Iz-BLk" secondAttribute="centerX" id="AOU-uS-s31"/>
+                            <constraint firstItem="jeA-jf-Dzg" firstAttribute="centerY" secondItem="8n3-Iz-BLk" secondAttribute="centerY" id="KNU-ec-URX"/>
+                            <constraint firstItem="0W0-QB-Not" firstAttribute="top" secondItem="FFg-z7-ze8" secondAttribute="bottom" constant="8" id="Lb7-Jy-auf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0W0-QB-Not" secondAttribute="trailing" id="oT6-ON-Ims"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pushBtn" destination="0W0-QB-Not" id="Qzz-v5-L3M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUN-Pq-KwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wZp-S9-ilO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="436"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Ug-mJ-bCQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="OkX-i9-Dvm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNw-oc-nli">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="JAj-f2-kvX" id="IvA-EX-YGR"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vo8-SP-3bM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Roy-kE-sLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="JAj-f2-kvX" customClass="NavigationDelegate" customModule="My_GWLAnimationTransition" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1089"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fox" width="220" height="212"/>
+        <image name="rabbit" width="220" height="212"/>
+    </resources>
+</document>

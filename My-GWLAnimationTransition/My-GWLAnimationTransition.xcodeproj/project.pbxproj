@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28147D8E1C9E50B600EFB392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28147D8D1C9E50B600EFB392 /* AppDelegate.swift */; };
+		28147D901C9E50B600EFB392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28147D8F1C9E50B600EFB392 /* ViewController.swift */; };
+		28147D931C9E50B600EFB392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28147D911C9E50B600EFB392 /* Main.storyboard */; };
+		28147D951C9E50B600EFB392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28147D941C9E50B600EFB392 /* Assets.xcassets */; };
+		28147D981C9E50B600EFB392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28147D961C9E50B600EFB392 /* LaunchScreen.storyboard */; };
+		28147DA01C9E537B00EFB392 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28147D9F1C9E537B00EFB392 /* SecondViewController.swift */; };
+		28147DA21C9E76BC00EFB392 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28147DA11C9E76BC00EFB392 /* NavigationDelegate.swift */; };
+		28147DA41C9E77D100EFB392 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28147DA31C9E77D100EFB392 /* TransitionAnimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28147D8A1C9E50B600EFB392 /* My-GWLAnimationTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-GWLAnimationTransition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28147D8D1C9E50B600EFB392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28147D8F1C9E50B600EFB392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28147D921C9E50B600EFB392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28147D941C9E50B600EFB392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28147D971C9E50B600EFB392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28147D991C9E50B600EFB392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28147D9F1C9E537B00EFB392 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		28147DA11C9E76BC00EFB392 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
+		28147DA31C9E77D100EFB392 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28147D871C9E50B600EFB392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28147D811C9E50B600EFB392 = {
+			isa = PBXGroup;
+			children = (
+				28147D8C1C9E50B600EFB392 /* My-GWLAnimationTransition */,
+				28147D8B1C9E50B600EFB392 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28147D8B1C9E50B600EFB392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28147D8A1C9E50B600EFB392 /* My-GWLAnimationTransition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28147D8C1C9E50B600EFB392 /* My-GWLAnimationTransition */ = {
+			isa = PBXGroup;
+			children = (
+				28147D8D1C9E50B600EFB392 /* AppDelegate.swift */,
+				28147D8F1C9E50B600EFB392 /* ViewController.swift */,
+				28147D9F1C9E537B00EFB392 /* SecondViewController.swift */,
+				28147DA11C9E76BC00EFB392 /* NavigationDelegate.swift */,
+				28147DA31C9E77D100EFB392 /* TransitionAnimator.swift */,
+				28147D911C9E50B600EFB392 /* Main.storyboard */,
+				28147D941C9E50B600EFB392 /* Assets.xcassets */,
+				28147D961C9E50B600EFB392 /* LaunchScreen.storyboard */,
+				28147D991C9E50B600EFB392 /* Info.plist */,
+			);
+			path = "My-GWLAnimationTransition";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28147D891C9E50B600EFB392 /* My-GWLAnimationTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28147D9C1C9E50B600EFB392 /* Build configuration list for PBXNativeTarget "My-GWLAnimationTransition" */;
+			buildPhases = (
+				28147D861C9E50B600EFB392 /* Sources */,
+				28147D871C9E50B600EFB392 /* Frameworks */,
+				28147D881C9E50B600EFB392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My-GWLAnimationTransition";
+			productName = "My-GWLAnimationTransition";
+			productReference = 28147D8A1C9E50B600EFB392 /* My-GWLAnimationTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28147D821C9E50B600EFB392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = v2panda;
+				TargetAttributes = {
+					28147D891C9E50B600EFB392 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 28147D851C9E50B600EFB392 /* Build configuration list for PBXProject "My-GWLAnimationTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28147D811C9E50B600EFB392;
+			productRefGroup = 28147D8B1C9E50B600EFB392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28147D891C9E50B600EFB392 /* My-GWLAnimationTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28147D881C9E50B600EFB392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28147D981C9E50B600EFB392 /* LaunchScreen.storyboard in Resources */,
+				28147D951C9E50B600EFB392 /* Assets.xcassets in Resources */,
+				28147D931C9E50B600EFB392 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28147D861C9E50B600EFB392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28147DA01C9E537B00EFB392 /* SecondViewController.swift in Sources */,
+				28147D901C9E50B600EFB392 /* ViewController.swift in Sources */,
+				28147DA41C9E77D100EFB392 /* TransitionAnimator.swift in Sources */,
+				28147DA21C9E76BC00EFB392 /* NavigationDelegate.swift in Sources */,
+				28147D8E1C9E50B600EFB392 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28147D911C9E50B600EFB392 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28147D921C9E50B600EFB392 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28147D961C9E50B600EFB392 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28147D971C9E50B600EFB392 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28147D9A1C9E50B600EFB392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28147D9B1C9E50B600EFB392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28147D9D1C9E50B600EFB392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "My-GWLAnimationTransition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PDA.My-GWLAnimationTransition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28147D9E1C9E50B600EFB392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "My-GWLAnimationTransition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PDA.My-GWLAnimationTransition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28147D851C9E50B600EFB392 /* Build configuration list for PBXProject "My-GWLAnimationTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28147D9A1C9E50B600EFB392 /* Debug */,
+				28147D9B1C9E50B600EFB392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28147D9C1C9E50B600EFB392 /* Build configuration list for PBXNativeTarget "My-GWLAnimationTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28147D9D1C9E50B600EFB392 /* Debug */,
+				28147D9E1C9E50B600EFB392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28147D821C9E50B600EFB392 /* Project object */;
+}
