@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_ImagePickerSheetController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="5WX-l4-dYB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-HE-0PW">
+                                <rect key="frame" x="250" y="104" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HIE-ja-jYo"/>
+                                    <constraint firstAttribute="height" constant="100" id="uma-wC-E6n"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0lQ-Y4-xtb" appends="YES" id="xtz-DF-7S8"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5WX-l4-dYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMM-qA-BwD"/>
+                            <constraint firstItem="FsM-HE-0PW" firstAttribute="centerX" secondItem="5WX-l4-dYB" secondAttribute="centerX" id="Kkc-4Q-bOF"/>
+                            <constraint firstItem="5WX-l4-dYB" firstAttribute="top" secondItem="FsM-HE-0PW" secondAttribute="bottom" constant="-204" id="Owq-4m-Awe"/>
+                            <constraint firstItem="5WX-l4-dYB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Yuq-0P-MjS"/>
+                            <constraint firstItem="5WX-l4-dYB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kQ3-Ko-v2c"/>
+                            <constraint firstItem="5WX-l4-dYB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mQj-8R-uNh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userProfileImageView" destination="FsM-HE-0PW" id="sqa-bT-vEh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0lQ-Y4-xtb">
+                    <connections>
+                        <action selector="imagetapped:" destination="BYZ-38-t0r" id="832-ih-u5e"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultAvatar" width="150" height="150"/>
+        <image name="moon" width="375" height="667"/>
+    </resources>
+</document>
